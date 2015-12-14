@@ -2,11 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>simple editor</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
+<div class="container">
+
 <h3>wysiwgt editor</h3>
     <form action='to.php' method="POST" id='form-editor'>
+    <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default" >&#x1F004;</button>
+          <button type="button" class="btn btn-default" >&#x1F0CF;</button>
+          <button type="button" class="btn btn-default" >&#x1F170;</button>
+          <button type="button" class="btn btn-default" >&#x1F171;</button>
+          <button type="button" class="btn btn-default" >&#x1F17E;</button>
+          <button type="button" class="btn btn-default" >&#x1F17F;</button>
+          <button type="button" class="btn btn-default" >&#x1F18E;</button>
+          <button type="button" class="btn btn-default" >&#x1F191;</button>
+          <button type="button" class="btn btn-default" >&#x1F192;</button>
+          <button type="button" class="btn btn-default" >&#x1F193;</button>
+          <button type="button" class="btn btn-default" >&#x1F194;</button>
+          <button type="button" class="btn btn-default" >&#x1F195;</button>
+          <button type="button" class="btn btn-default" >&#x1F196;</button>
+          <button type="button" class="btn btn-default" >&#x1F197;</button>
+          <button type="button" class="btn btn-default" >&#x1F198;</button>
+          <button type="button" class="btn btn-default" >&#x1F199;</button>
+          <button type="button" class="btn btn-default" >🅾</button>
+      </div>
+      <hr>
         <input type="button" value='B' onclick='bold()'>
         <input type="button" value='I' onclick='italic()'>
         <input type="button" value='U' onclick='underline()'>
@@ -22,6 +45,22 @@
         <br>
         <input type="button" value='post' onclick='formsubmit()'>
     </form>
-    <script type="text/javascript" src='js.js'></script>
+    
+</div>
+    <script type="text/javascript" src='js/app.js'></script>
+    <script type="text/javascript" src='js/jquery.min.js'></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script src="js/twemoji.min.js"></script>
+    <script type="text/javascript">
+        twemoji.parse(document.body);
+        $('.btn-group button').click(function(){
+            var alt = $(this).find('img')[0].getAttribute('alt');
+            // console.log($(this).find('img')[0].getAttribute('alt'));
+            inserthtml(alt);
+            $('form').append(alt);
+            twemoji.parse($('iframe')[0]);
+                        $('#editor').focus();
+        });
+    </script>
 </body>
 </html>
