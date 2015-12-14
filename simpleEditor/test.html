@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h3>wysiwgt editor</h3>
+    <form action='to.php' method="POST" id='form-editor'>
+        <input type="button" value='B' onclick='bold()'>
+        <input type="button" value='I' onclick='italic()'>
+        <input type="button" value='U' onclick='underline()'>
+        <input type="button" value='Size' onclick='fontsize()'>
+        <input type="button" value='Color' onclick='fontcolor()'>
+        <input type="button" value='Highlight' onclick='highlight()'>
+        <input type="button" value='Link' onclick='link()'>
+        <input type="button" value='Unlink' onclick='unlink()'>
+        <input type="button" value='InsertImage' onclick='insertimage()'>
+        <br>
+        <textarea name='textarea' id='textarea' style="display: none"></textarea>
+        <iframe name='editor' id='editor' style='width: 500px; height: 400px '></iframe>
+        <br>
+        <input type="button" value='post' onclick='formsubmit()'>
+    </form>
+    <script type="text/javascript" src='js.js'></script>
+</body>
+</html>
