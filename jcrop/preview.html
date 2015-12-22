@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	.jcrop-thumb {
+  top: 15px;
+  right: -20px;
+  border: 1px black solid;
+}
+</style>
+<body>
+<div id="interface">
+	<img  src="upload/a.jpg" id='target'>
+          </div>
+
+	<form action="save.php" id="myform">
+  <input type="hidden" name="cropx" id="cropx" value="0" />
+  <input type="hidden" name="cropy" id="cropy" value="0" />
+  <input type="hidden" name="cropw" id="cropw" value="0" />
+  <input type="hidden" name="croph" id="croph" value="0" />
+  <input type="submit" value="Save Coordinates" />
+</form>
+
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="http://jcrop.org/js/Jcrop/js/Jcrop.js"></script>
+<link rel="stylesheet" href="http://jcrop.org/css/Jcrop.css">
+<script type="text/javascript">
+  jQuery(function($){
+
+  // Create a scope-wide variable to hold the Thumbnailer instance
+  var thumbnail;
+  
+  // Instantiate Jcrop
+  $('#target').Jcrop({
+    aspectRatio: 1,
+    setSelect: [ 175, 100, 400, 300 ]
+  },function(){
+    var jcrop_api = this;
+    thumbnail = this.initComponent('Thumbnailer', { width: 130, height: 130 });
+    this.ui.preview = thumbnail;
+  });
+
+  
+});
+
+    	$('#interface').on('cropmove cropend',function(e,s,c){
+  $('#cropx').val(c.x);
+  $('#cropy').val(c.y);
+  $('#cropw').val(c.w);
+  $('#croph').val(c.h);
+});
+</script>
+</body>
+</html>

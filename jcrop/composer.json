@@ -1,0 +1,13 @@
+{
+    "name": "jzfan/jcrop",
+    "description": "jcrop and dropzone",
+    "authors": [
+        {
+            "name": "jzfan",
+            "email": "jzmcc@163.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.3"
+    }
+}
