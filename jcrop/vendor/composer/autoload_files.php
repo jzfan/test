@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+<<<<<<< HEAD
     $vendorDir . '/symfony/polyfill-mbstring/bootstrap.php',
     $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
     $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
@@ -16,4 +17,7 @@ return array(
     $vendorDir . '/guzzlehttp/psr7/src/functions_include.php',
     $vendorDir . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
     $vendorDir . '/laravel/framework/src/Illuminate/Support/helpers.php',
+=======
+    'a0edc8309cc5e1d60e3047b5df6b7052' => $vendorDir . '/guzzlehttp/psr7/src/functions_include.php',
+>>>>>>> origin/master
 );

@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "hash": "033b64e66f28696df6280f76582dd6e6",
     "content-hash": "dc9e2f875ab09ce35cfab8df4953e4fe",
     "packages": [
@@ -162,6 +163,12 @@
             "time": "2015-11-06 14:35:42"
         },
         {
+=======
+    "hash": "dfabe7dcb12284fbaa0f4aa9cf844b9e",
+    "content-hash": "474129e5d11ffdc0eb6f72f8fa072eca",
+    "packages": [
+        {
+>>>>>>> origin/master
             "name": "guzzlehttp/psr7",
             "version": "1.2.1",
             "source": {
@@ -282,6 +289,7 @@
             "time": "2015-11-30 17:03:21"
         },
         {
+<<<<<<< HEAD
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -600,11 +608,37 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.1-dev"
+=======
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.phpcomposer.com/files/php-fig/http-message/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298.zip",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+>>>>>>> origin/master
                 }
             },
             "autoload": {
                 "psr-4": {
+<<<<<<< HEAD
                     "League\\Flysystem\\": "src/"
+=======
+                    "Psr\\Http\\Message\\": "src/"
+>>>>>>> origin/master
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -613,6 +647,7 @@
             ],
             "authors": [
                 {
+<<<<<<< HEAD
                     "name": "Frank de Jonge",
                     "email": "info@frenky.net"
                 }
@@ -3168,13 +3203,36 @@
             "time": "2015-11-30 12:36:17"
         }
     ],
+=======
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
+        }
+    ],
+    "packages-dev": [],
+>>>>>>> origin/master
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
+<<<<<<< HEAD
     "platform": {
         "php": ">=5.5.9"
     },
+=======
+    "platform": [],
+>>>>>>> origin/master
     "platform-dev": []
 }

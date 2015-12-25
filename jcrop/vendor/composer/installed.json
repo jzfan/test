@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "name": "vlucas/phpdotenv",
         "version": "v2.1.0",
         "version_normalized": "2.1.0.0",
@@ -3095,6 +3096,8 @@
         "homepage": "https://symfony.com"
     },
     {
+=======
+>>>>>>> origin/master
         "name": "psr/http-message",
         "version": "1.0",
         "version_normalized": "1.0.0.0",
