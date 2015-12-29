@@ -17,5 +17,3 @@ $img->crop($cropw, $croph, $cropx, $cropy)->save('./upload/avatar_'.$avatar);
 // $img->crop(111,111,0,0);
 
 echo '<img src="./upload/avatar_'.$avatar.'">';
-
-
