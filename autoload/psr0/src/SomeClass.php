@@ -1,10 +1,10 @@
 <?php
-namespace Test;
+namespace src;
 
 class SomeClass
 {
 	public function show()
 	{
-		echo 'hi there';
+		echo 'psr0 loaded'.'<br>';
 	}
 }
