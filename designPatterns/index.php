@@ -37,6 +37,6 @@ $b = new B;
 $b->make();
 
 echo '<hr>';
-echo 'stategy mode:<br>';
+echo 'strategy mode:<br>';
 
-require 'stategy/log.php';
+require 'strategy/log.php';
